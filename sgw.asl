@@ -1,7 +1,7 @@
 state("Sniper_x86")
 {
     byte level : "engine_x86.dll", 0x044DFE0, 0x10, 0x104, 0x10;
-    bool isLoading : "engine_x86.dll", 0x0445C20, 0x478; //works most of the time lmao
+    bool isLoading : "engine_x86.dll", 0x0445C20, 0x478; //Inconsistent
     byte3 timer : "GameDLL_x86.dll", 0x00264990, 0x0;
     float fadeOut : "GameDLL_x86.dll", 0x00A86AE4, 0x534, 0x8, 0x13C;
 }
@@ -28,6 +28,7 @@ split
         return true;
     }
     
+    //Splits when the fade to black reaches 100%
     if (current.level == 16 && current.fadeOut == 1 && old.fadeOut != 1){
         return true;
     }
