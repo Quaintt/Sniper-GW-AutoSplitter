@@ -14,7 +14,7 @@ startup
 
 start
 {
-    if (current.timer[0] != old.timer[0] && current.level == 0){
+    if (current.level == 0 && current.timer[0] != old.timer[0]){
         return true;
     }
 }
