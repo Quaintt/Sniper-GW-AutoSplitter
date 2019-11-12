@@ -1,7 +1,7 @@
 state("Sniper_x86")
 {
     byte level : "engine_x86.dll", 0x044DFE0, 0x10, 0x104, 0x10;
-    bool isLoading : "engine_x86.dll", 0x0445C20, 0x478; //Inconsistent
+    bool isLoading : "GameDLL_x86.dll", 0x000142A8, 0x0;
     byte3 timer : "GameDLL_x86.dll", 0x00264990, 0x0;
     float fadeOut : "GameDLL_x86.dll", 0x00A86AE4, 0x534, 0x8, 0x13C;
 }
