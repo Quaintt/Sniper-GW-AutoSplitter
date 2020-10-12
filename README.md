@@ -1,5 +1,5 @@
 # Sniper: Ghost Warrior Autosplitter
-A LiveSplit autosplitter for use in speedrunning the video game *Sniper: Ghost Warrior*. The script uses pointers to read information the game is storing in main memory, then uses this information to accurately time the user's playthrough.
+A [LiveSplit](https://github.com/LiveSplit/LiveSplit) autosplitter for use in speedrunning the video game *Sniper: Ghost Warrior*. The script uses pointers to read information the game is storing in main memory, then uses this information to accurately time the user's playthrough.
 
 ## Memory pointers used
 | Pointer   | Description                                           |
